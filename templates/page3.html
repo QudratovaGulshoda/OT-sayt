@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href={% static "dist/page3style.css" %}>
+  <link rel="Icon" href={% static "dist/macospng.png" %}>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Zamonaviy OT</title>
+</head>
+<!-- header -------------------------------------------------------------------->
+<body>
+    {% include 'navbar.html' %}
+  
+
+
+  <div class="windows">
+    <ul>
+    <img src={% static "dist/LINUX.png" %} width="300px" height="300px">
+    </ul>
+<h1>Linux operatsion tizimi<br></h1>
+<p>
+    <br>Bu operatsion tizim 1991-yil Xelsinkidagi universitetlardan birida tahsil oluvchi talaba Linus Torvaldsning dissertatsiya ishi natijasida, UNIX operatsion tizimi asosida yangi operatsion tizimi sifatida yuzaga keldi.<br> Avvaliga Torvalds yangi operatsion tizimni Freax (inglizcha „free“, „freak“ soʻzlari hamda UNIX oilasiga mansubligini bildiruvchi „X“ harflari birlashmasi) deb atamoqchi edi. Biroq kernel birinchi bor joylashtirilgan FTP serverning administratori hamda Torvaldsning doʻsti Ari Lemka yadroga tegishli jildni linux deb nomladi. Shu-shu bu operatsion tizim ushbu nom bilan atala boshlandi.
+
+    Operatsion tizim Internet tarmogʻiga joylashtirishi natijasida tez orada oʻz foydalanuvchilari va muxlislariga ega boʻldi va koʻpgina dasturchi(programmist)larni oʻziga jalb qilishi Linux operatsion tizimining keskin rivojlanishi uchun katta omil sifatida xizmat qildi.
+    
+    Bugungi kunda dunyo miqyosidagi operatsion tizimlar ichida oʻziga xos oʻrniga egadir. Buning asosiy sabablaridan biri shuki, Linux erkin tarqatiladigan dasturiy taʼminotlardan biridir, yaʼni har bir foydalanuvchi dastlabki tizim kodlarini Internet tarmogʻi orqali yoki kompakt-diskdagi nusxasini sotib olish imkoniyatiga ega. Bu operatsion tizimning 2 ta ishlash uchun moʻljallangan interfeyslari boʻlib, ular GUI (Graphic User Interface) — grafikali interfays hamda CLI(Command Line Interface) — konsol, yaʼni buyruqlar qatoridan iboratdir.
+
+</p>
+</div>
+
+
+
+
+  <!--footer ------------------------------------------------------------------->
+  {% include 'footer.html' %}
+</body>
+</html>

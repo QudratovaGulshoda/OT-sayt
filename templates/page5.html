@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href={% static "dist/page5style.css" %}>
+  <link rel="Icon" href={% static "dist/macospng.png" %}>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Zamonaviy OT</title>
+</head>
+<!-- header -------------------------------------------------------------------->
+<body>
+    {% include 'navbar.html' %}
+
+
+  <div class="windows">
+    <ul>
+    <img src={% static "dist/iospng.png" %} width="300px" height="300px">
+    </ul>
+<h1>iOS operatsion tizimi<br></h1>
+<p>
+    <br>iOS (eski nomi iPhone OS) — amerikalik muhandis Steve Jobs tomonidan ishlab chiqarilgan mobil aloqa operatsion sistemasi.[1] iOS Apple Inc.ning iPhone, iPod, iPad, Apple TV uskunalarida oʻrnatilgan operatsion sistema sanaladi. iOS multitach (koʻp belgi sezuvchanlik) xususiyati va tezkorligi bilan boshqa mobil aloqa operatsion sistemalardan yaqqol ajralib turadi. <br>iOSning birinchi versiyasi 9-yanvar 2007-yilda Macworld Conference & Expo koʻrgazmasida taqdim etildi va hozirga kelib eng soʻnggi versiyasi iOS 14.5.1 (3-may 2021-yil) chiqarildi.<br> iOSga oʻyin yoki dasturlar ilovalari onlayn-doʻkon App Store dasturi orqali koʻchirib olish bilan amalga oshirish mumkin. App Storedagi ilovalar soni hozir (13-may 2016-yil) ga kelib 130 milliondan oshdi va yuklashlar soni esa 70 milliarddan oshib ketdi.[2]
+</p>
+</div>
+
+
+
+
+  <!--footer ------------------------------------------------------------------->
+  {% include 'footer.html' %}
+</body>
+</html>

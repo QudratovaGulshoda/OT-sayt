@@ -1,0 +1,124 @@
+{% load static %}
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href={% static "dist/style.css"%}>
+  <link rel="Icon" href={% static "dist/macospng.png"%}>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>
+    {% block title %}
+    Zamonaviy OT
+ {% endblock title %}</title>
+</head>
+<!-- header -->
+<body>
+  {% include 'navbar.html' %}
+  
+  <!-- slide page -->
+
+
+  <div class="container">
+		<div class="slideshow-container">
+
+			<div class="slide-container fade">
+				<img src={% static "dist/slide1.jpg" %}>
+			</div>
+
+			<div class="slide-container fade">
+				<img src={% static "dist/slide2.jpg" %}>
+			</div>
+
+			<div class="slide-container fade">
+				<img src={% static "dist/slide3.jpg" %}>
+			</div>
+
+			<div class="dot-container">
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="content">
+		<h1>Zamonaviy Operatsion Tizimlar</h1>
+		<p>
+      Bu bugungi kunda ma`lum bo`lgan operatsion tizimlarning ro`yxatidir. Operatsion tizimlar: texnologiyasi (UNIXsimon, UNIX`dan oldingi/keyingi avlodlar); litsenziya turi (yopiq yoki ochiq manba); ishlab chiqarilgan vaqti (eski yoki zamonaviy); maqsadiga ko`ra (universal, ichki tizim operatsion tizimlari, PDA operatsion tizimlari, real vaqtda operatsion tizim, ish stantsiyalari yoki serverlari uchun), shuningdek boshqa ko`plab funksiyalariga qarab tavsiflanadi.
+  </p>
+	</div>
+
+<script type="text/javascript" src={% static "dist/script.js" %}></script>
+
+
+<!-- bannerla -->
+<section >
+  <div class="asosiy">
+      <div class="cardlar joy">
+          <div class="rasm chi1">
+
+          </div>
+          <div class="content">
+              <h1 class="ismi">Windows</h1>
+              
+          </div>
+          <div>
+              <a href={% url "page1.html" %}><button class="tugma mkz">Batafsil</button></a>
+          </div>
+      </div>
+      <div class="cardlar joy">
+          <div class="rasm chi2">
+
+          </div>
+          <div class="content">
+              <h1 class="ismi">MacOS</h1>
+              
+          </div>
+          <div>
+            <a href="page2.html"><button class="tugma mkz">Batafsil</button></a>
+          </div>
+      </div>
+      <div class="cardlar joy">
+          <div class="rasm chi3">
+
+          </div>
+          <div class="content">
+              <h1 class="ismi">Linux</h1>
+            
+          </div>
+          <div>
+            <a href="page3.html"><button class="tugma mkz">Batafsil</button></a>
+          </div>
+      </div>
+      <div class="cardlar joy">
+          <div class="rasm chi4">
+
+          </div>
+          <div class="content">
+              <h1 class="ismi">Android</h1>
+              
+          </div>
+          <div>
+            <a href="page4.html"><button class="tugma mkz">Batafsil</button></a>
+          </div>
+      </div>
+      <div class="cardlar joy">
+          <div class="rasm chi5">
+
+          </div>
+          <div class="content">
+              <h1 class="ismi">iOS</h1>
+          </div>
+          <div>
+            <a href="page5.html"><button class="tugma mkz">Batafsil</button></a>
+          </div>
+      </div>
+       </div>
+
+  <div class="rang"></div>
+</section>
+      <!-- pasdagi futer -->
+      {% include 'footer.html' %}
+      
+</body>
+</html>
